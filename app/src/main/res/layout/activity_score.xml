@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bb"
+    tools:context=".ScoreActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:layout_height="49dp"
+                android:id="@+id/back"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/live_scoreboard"
+                android:layout_toEndOf="@+id/back"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_score"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/comfortaa"
+        android:layout_marginStart="20dp"
+        android:textColor="#B10808"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/teams"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/lyt1"
+                android:background="@drawable/cardback"
+                android:orientation="horizontal"
+                tools:ignore="NotSibling">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/team_1"
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/txt1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_marginStart="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/score1"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="153dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/txt1"
+                    android:background="@drawable/edittext"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/lyt2"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/cardback"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20sp"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center"
+                    android:text="@string/team_2"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/score2"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="153dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/txt2"
+                    android:background="@drawable/edittext"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/lyt3"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/cardback"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/team_3"
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/txt3"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_marginStart="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/score3"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="153dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/txt3"
+                    android:background="@drawable/edittext"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/lyt4"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/cardback"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/team_4"
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/txt4"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_marginStart="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/score4"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="153dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/txt4"
+                    android:background="@drawable/edittext"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/lyt5"
+                android:background="@drawable/cardback"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Team 5"
+                    android:id="@+id/txt5"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_marginStart="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/score5"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="153dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/txt5"
+                    android:background="@drawable/edittext"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/lyt6"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cardback"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/team_6"
+                    android:id="@+id/txt6"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_marginStart="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/score6"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="153dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/txt6"
+                    android:background="@drawable/edittext"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/lyt7"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/cardback"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/team_7"
+                    android:id="@+id/txt7"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_marginStart="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/score7"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="153dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/txt7"
+                    android:background="@drawable/edittext"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/lyt8"
+                android:background="@drawable/cardback"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/team_8"
+                    android:id="@+id/txt8"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp"
+                    android:layout_marginStart="20sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/score8"
+                    android:layout_width="99dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="153dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/txt8"
+                    android:background="@drawable/edittext"
+                    android:text="@string/_0"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
