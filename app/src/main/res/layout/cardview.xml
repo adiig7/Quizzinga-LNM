@@ -2,12 +2,12 @@
 <androidx.cardview.widget.CardView
 xmlns:android="http://schemas.android.com/apk/res/android"
 android:layout_width="match_parent"
-android:layout_height="300dp"
+android:layout_height="240dp"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 android:orientation="vertical"
-app:cardCornerRadius="15dp"
+app:cardCornerRadius="10dp"
 android:layout_margin="15dp"
-android:elevation="90dp">
+android:elevation="30dp">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -16,7 +16,7 @@ android:elevation="90dp">
     android:background="@color/colorPrimaryDark">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="170dp"
+        android:layout_height="150dp"
         android:scaleType="centerCrop"
         android:src="@mipmap/ic_launcher"
         android:id="@+id/event_img"/>
@@ -46,7 +46,7 @@ android:elevation="90dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="("
+                android:text="( "
                 android:fontFamily="@font/montserrat"
                 android:layout_marginStart="5dp"
                 android:textColor="#1010EC"
@@ -65,7 +65,7 @@ android:elevation="90dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=")"
+                android:text=" )"
                 android:fontFamily="@font/montserrat"
                 android:textColor="#1010EC"
                 android:textSize="25sp"
@@ -88,7 +88,7 @@ android:elevation="90dp">
                 android:id="@+id/venue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Location"
+                android:text="@string/location"
                 android:textSize="20sp"
                 android:textStyle="italic" />
         </LinearLayout>
@@ -96,7 +96,8 @@ android:elevation="90dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="start"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -110,7 +111,7 @@ android:elevation="90dp">
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:text="21/02/2020"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -124,7 +125,7 @@ android:elevation="90dp">
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:text="15:30"
-                android:textSize="20sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
 
