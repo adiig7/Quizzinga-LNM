@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quizzinga</string>
+    <string name="live_scoreboard">Live scoreboard</string>
+    <string name="team_1">Team 1</string>
+    <string name="_0">0</string>
+    <string name="team_2">Team 2</string>
+    <string name="team_3">Team 3</string>
+    <string name="team_4">Team 4</string>
+    <string name="team_6">Team 6</string>
+    <string name="team_7">Team 7</string>
+    <string name="team_8">Team 8</string>
+</resources>

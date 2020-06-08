@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/cardback"
+tools:context=".MainActivity">
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/toolbar_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:maxLines="1"
+            android:text="Quizzinga"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/view_score"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:fontFamily="@font/comfortaa"
+            android:paddingRight="8dp"
+            android:text="View Live Score"
+            android:textColor="#e9ad19"
+            android:textSize="18sp"
+            android:textStyle="italic|bold"/>
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/x"
+    android:layout_below="@+id/toolbar">
+
+    <TextView
+        android:id="@+id/upcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Upcoming Quizzes"
+        android:fontFamily="@font/comfortaa"
+        android:textColor="#D30D0D"
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/x"
+    android:layout_marginTop="5dp" />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/insta"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/ic_instagram" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_toEndOf="@id/insta"
+        android:src="@drawable/ic_facebook" />
+
+    <ImageView
+        android:id="@+id/dev"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@id/facebook"
+        android:src="@drawable/ic_dev" />
+
+</LinearLayout>
+
+
+</RelativeLayout>
